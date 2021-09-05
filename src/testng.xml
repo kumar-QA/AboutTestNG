@@ -1,0 +1,59 @@
+<!-- 
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Test Automation suite">
+  <test name="TestNG features Test">
+      <classes>
+      <class name="TestNG.com.AnnotationApply"/>
+      <class name="TestNG.com.Features1"/>
+      <class name="TestNG.com.Features2"/>
+      <class name="TestNG.com.TestngAnnotation"/> 
+      </classes>
+  </test>  
+</suite>
+ -->
+<!-- 
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Parameter suite">
+  <test name="TestNG parameter Test">
+      <classes>
+      <class name="com.DataDriven.DataDrivenOnRegistration"/>
+      </classes>
+  </test> 
+</suite> 
+ -->
+<!-- 
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG FailedTestsuite">
+	<listeners>
+	<listener class-name="RetryAnalyzer.RunTransform"/>
+	</listeners>
+  <test name="RetryMultupleFailedTest">
+      <classes>
+      	<class name="RetryAnalyzer.MyTest">
+      		<methods>
+      			<include name="test1"/>
+      			<include name="test2"/>
+      			<exclude name="test3"/>
+      		</methods>
+     	 </class>
+      </classes>
+  </test> 
+</suite> 
+
+
+ -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG ScreenShot Test" verbose="10">
+	<listeners>
+	<listener class-name="TestNgListener.CustomListener"/>
+	</listeners>
+  <test name="FailTest screenShot">
+      <classes>
+      	<class name="TestNgListener.ScreenShotTest"/>
+      </classes>
+  </test> 
+</suite> 
+
